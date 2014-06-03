@@ -4,9 +4,23 @@
     <title>org-page</title>
     <link>https://snosov1.github.io/</link>
     <description>static site generator</description>
-    <pubDate>Tue, 03 Jun 2014 15:49:39 MSK</pubDate>
-    <lastBuildDate>Tue, 03 Jun 2014 15:49:39 MSK</lastBuildDate>
+    <pubDate>Tue, 03 Jun 2014 16:29:33 MSK</pubDate>
+    <lastBuildDate>Tue, 03 Jun 2014 16:29:33 MSK</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Test post 2</title>
+      <link>https://snosov1.github.io/blog/2014/06/03/Test post 2</link>
+      <description>Hello</description>
+      <pubDate>2014-06-03</pubDate>
+      <guid>https://snosov1.github.io/blog/2014/06/03/Test post 2</guid>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>https://snosov1.github.io/blog/2014/06/03/Test</link>
+      <description>This is a test post</description>
+      <pubDate>2014-06-03</pubDate>
+      <guid>https://snosov1.github.io/blog/2014/06/03/Test</guid>
+    </item>
   </channel>
 </rss>
