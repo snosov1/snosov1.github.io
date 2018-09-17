@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Пещера старого хакера</title>
+    <link>http://localhost:1313/ru/</link>
+    <description>Recent content on Пещера старого хакера</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Wed, 12 Sep 2018 14:59:34 +0300</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/ru/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ключ на старт</title>
+      <link>http://localhost:1313/ru/post/init/</link>
+      <pubDate>Wed, 12 Sep 2018 14:59:34 +0300</pubDate>
+      
+      <guid>http://localhost:1313/ru/post/init/</guid>
+      
+        <description>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;Давным-давно кроме черноты вообще ничего не было. Так что, по-моему, свет
+начинает побеждать.&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;Раст, Настоящий детектив&lt;/strong&gt;
+    
+      
+        
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+
+</description>
+      
+    </item>
+    
+    <item>
+      <title>О себе</title>
+      <link>http://localhost:1313/ru/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/ru/about/</guid>
+      
+        <description>&lt;p&gt;Меня зовут Сергей Носов. Я - бывалый программист из России. Занимаюсь
+программированием и смежными дисциплинами сколько себя помню. Большую часть
+профессионального опыта составляют нативные языки программирования (главным
+образом, С++); оптимизация под Интеловские процессоры и Нвидиевские карты;
+Компьютерное Зрение и разделы математики, которые обычно объединяют
+словосочетанием &#34;Computer Science&#34;.&lt;/p&gt;
+
+&lt;p&gt;Я - ярый пользователь и приверженец редактора &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34; title=&#34;Emacs&#34;&gt;Emacs&lt;/a&gt; и, как следствие, автор
+расширяемого, настраиваемого и самодокументированного &lt;a href=&#34;https://github.com/snosov1/dot-emacs&#34; title=&#34;конфигурационного файла&#34;&gt;конфигурационного файла&lt;/a&gt;
+для него, где также имеется &lt;a href=&#34;https://github.com/snosov1/dot-emacs/blob/master/tutorial&#34; title=&#34;методичка&#34;&gt;методичка&lt;/a&gt; для начинающих. По случаю, я ещё являюсь
+автором популярного пакета &lt;a href=&#34;https://melpa.org/#/toc-org&#34; title=&#34;toc-org&#34;&gt;toc-org&lt;/a&gt; для автоматической генерации содержания (и
+автором не очень популярного пакета &lt;a href=&#34;https://melpa.org/#/dummyparens&#34; title=&#34;dummyparens&#34;&gt;dummyparens&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Список публичных проектов, в которых я, так или иначе участвовал, выглядит
+следующим образом:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://software.intel.com/en-us/openvino-toolkit&#34; title=&#34;OpenVINO&#34;&gt;OpenVINO&lt;/a&gt; Model Zoo. Наша команда натренировала примерно треть моделей под грифом &#34;intel_models&#34;&lt;/li&gt;
+&lt;li&gt;Обучающие &lt;a href=&#34;https://github.com/snosov1/jetson-screencasts-sources&#34; title=&#34;скринкасты&#34;&gt;скринкасты&lt;/a&gt; по OpenCV на Jetson&#39;е&lt;/li&gt;
+&lt;li&gt;OpenCV&#39;шная &lt;a href=&#34;https://github.com/opencv/opencv/blob/master/modules/imgproc/src/clahe.cpp&#34; title=&#34;реализация CLAHE&#34;&gt;реализация CLAHE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Intel-Media-SDK/MediaSDK/tree/master/samples&#34; title=&#34;Сэмплы в Media SDK&#34;&gt;Сэмплы в Media SDK&lt;/a&gt; (участвовал в разработке ещё до того, как Media SDK вышла в Open Source)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/digitalsphere/sphericalmirror/src/master/&#34; title=&#34;Плагин для VLC&#34;&gt;Плагин для VLC&lt;/a&gt;, реализующий преобразование &#34;Сферическое Зеркало&#34;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.dropbox.com/s/yq7p4de99knn1o0/pre-defense.pdf?dl=0&#34; title=&#34;Магистерская диссертация&#34;&gt;Магистерская диссертация&lt;/a&gt; из Нижегородского Университета им. Лобачевского &#34;Об объёме максимального параллелепипеда, вложенного в симплекс&#34;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;С 2015 года я веду еженедельный субботний кружок по спортивному программированию
+в Лицее 165 г. Нижний Новгород. Также, веду ежегодную лекцию об &#34;&lt;a href=&#34;https://github.com/UNN-VMK-Software/devtools-course-theory/tree/master/slides/09-automation&#34; title=&#34;Автоматизации в
+программировании&#34;&gt;Автоматизации в
+программировании&lt;/a&gt;&#34; в рамках курса &#34;Инструменты Разработки&#34; в ННГУ.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>

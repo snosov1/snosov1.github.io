@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Old-school old-time hacker&#39;s lair</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Old-school old-time hacker&#39;s lair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 12 Sep 2018 14:59:34 +0300</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Init</title>
+      <link>http://localhost:1313/post/init/</link>
+      <pubDate>Wed, 12 Sep 2018 14:59:34 +0300</pubDate>
+      
+      <guid>http://localhost:1313/post/init/</guid>
+      
+        <description>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;Once there was only dark. If you ask me, the light is winning.&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;Rust, True Detective&lt;/strong&gt;
+    
+      
+        
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+
+</description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      
+        <description>&lt;p&gt;My name is Sergei Nosov. I&#39;m an old-school old-time hacker from Russia. I&#39;ve
+been programming and doing math/computer science for as long as I can remember.
+I have an extensive experience in native programming languages (mainly, C++); HW
+optimization for Intel CPUs and Nvidia GPUs; Computer Vision and Computer
+Science.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m a heavy &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34; title=&#34;Emacs&#34;&gt;Emacs&lt;/a&gt; user with an extensible, customizable, self-documented
+&lt;a href=&#34;https://github.com/snosov1/dot-emacs&#34; title=&#34;configuration file&#34;&gt;configuration file&lt;/a&gt; that also has a &lt;a href=&#34;https://github.com/snosov1/dot-emacs/blob/master/tutorial&#34; title=&#34;tutorial&#34;&gt;tutorial&lt;/a&gt; for beginners (in Russian). Also,
+I&#39;m the author and maintainer of a popular Emacs package &lt;a href=&#34;https://melpa.org/#/toc-org&#34; title=&#34;toc-org&#34;&gt;toc-org&lt;/a&gt; for automatic
+table of contents generation (and not so popular &lt;a href=&#34;https://melpa.org/#/dummyparens&#34; title=&#34;dummyparens&#34;&gt;dummyparens&lt;/a&gt; package)&lt;/p&gt;
+
+&lt;p&gt;The list of public projects I&#39;ve been contributing to over the years looks
+something like this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://software.intel.com/en-us/openvino-toolkit&#34; title=&#34;OpenVINO&#34;&gt;OpenVINO&lt;/a&gt; Model Zoo. Our team has trained about one third of the &#34;intel_models&#34;&lt;/li&gt;
+&lt;li&gt;OpenCV on Jetson &lt;a href=&#34;https://github.com/snosov1/jetson-screencasts-sources&#34; title=&#34;screencasts&#34;&gt;screencasts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;OpenCV &lt;a href=&#34;https://github.com/opencv/opencv/blob/master/modules/imgproc/src/clahe.cpp&#34; title=&#34;CLAHE implementation&#34;&gt;CLAHE implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Intel-Media-SDK/MediaSDK/tree/master/samples&#34; title=&#34;Media SDK samples&#34;&gt;Media SDK samples&lt;/a&gt; (in pre-open source era of Media SDK)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/digitalsphere/sphericalmirror/src/master/&#34; title=&#34;VLC plugin&#34;&gt;VLC plugin&lt;/a&gt; for Spherical Mirror projection&lt;/li&gt;
+&lt;li&gt;My &lt;a href=&#34;https://www.dropbox.com/s/yq7p4de99knn1o0/pre-defense.pdf?dl=0&#34; title=&#34;Master&#39;s Thesis&#34;&gt;Master&#39;s Thesis&lt;/a&gt; (in Russian) &#34;On the maximal volume of parallelotope inscribed in d-simplex&#34; at Nizhniy Novgorod State University.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since 2015, I lead regular Saturday classes on competitive programming at
+Nizhniy Novgorod school 165. Also, I have an annual lecture on &lt;a href=&#34;https://github.com/UNN-VMK-Software/devtools-course-theory/tree/master/slides/09-automation&#34; title=&#34;&amp;quot;Automation in
+Software Engineering&amp;quot;&#34;&gt;&#34;Automation in
+Software Engineering&#34;&lt;/a&gt; (in Russian) at Nizhniy Novgorod State University (part of
+the &#34;Software Development Tools&#34; course)&lt;/p&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>
