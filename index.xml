@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Old-school old-time hacker&#39;s lair</title>
-    <link>http://localhost:1313/</link>
+    <link>http://snosov1.github.io/</link>
     <description>Recent content on Old-school old-time hacker&#39;s lair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 12 Sep 2018 14:59:34 +0300</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://snosov1.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Init</title>
-      <link>http://localhost:1313/post/init/</link>
+      <link>http://snosov1.github.io/post/init/</link>
       <pubDate>Wed, 12 Sep 2018 14:59:34 +0300</pubDate>
       
-      <guid>http://localhost:1313/post/init/</guid>
+      <guid>http://snosov1.github.io/post/init/</guid>
       
         <description>
 
@@ -59,10 +59,10 @@
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://snosov1.github.io/about/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://snosov1.github.io/about/</guid>
       
         <description>&lt;p&gt;My name is Sergei Nosov. I&#39;m an old-school old-time hacker from Russia. I&#39;ve
 been programming and doing math/computer science for as long as I can remember.
