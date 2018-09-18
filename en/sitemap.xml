@@ -3,8 +3,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://snosov1.github.io/post/init/</loc>
-    <lastmod>2018-09-12T14:59:34+03:00</lastmod>
+    <loc>http://snosov1.github.io/post/peterson-gulag/</loc>
+    <lastmod>2018-09-18T15:45:44+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -17,6 +17,13 @@
   </url>
   
   <url>
+    <loc>http://snosov1.github.io/post/init/</loc>
+    <lastmod>1970-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://snosov1.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -24,14 +31,14 @@
   
   <url>
     <loc>http://snosov1.github.io/</loc>
-    <lastmod>2018-09-12T14:59:34+03:00</lastmod>
+    <lastmod>2018-09-18T15:45:44+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://snosov1.github.io/post/</loc>
-    <lastmod>2018-09-12T14:59:34+03:00</lastmod>
+    <lastmod>2018-09-18T15:45:44+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
