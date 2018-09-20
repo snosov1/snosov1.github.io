@@ -6,10 +6,52 @@
     <description>Recent content in Posts on Пещера старого хакера</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 18 Sep 2018 15:34:13 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 20 Sep 2018 13:06:46 +0300</lastBuildDate>
     
 	<atom:link href="http://snosov1.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Про доступность информации</title>
+      <link>http://snosov1.github.io/ru/post/available-knowledge/</link>
+      <pubDate>Thu, 20 Sep 2018 13:06:46 +0300</pubDate>
+      
+      <guid>http://snosov1.github.io/ru/post/available-knowledge/</guid>
+      <description>&lt;blockquote&gt;
+  &lt;p&gt;Плюнь тому в глаза, кто скажет, что можно обнять необъятное!&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;Козьма Прутков&lt;/strong&gt;
+    
+      
+        
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;В достаточно осознанном уже возрасте я впервые поглядел фильм &#34;Москва слезам не
+верит&#34;. При просмотре, откровенно говоря, испытал некий шок - до чего ладно
+сделано. Актёрская игра, персонажи, сценарий - на крепкую пятёрку. Со временем
+из памяти как-то вымылись детали, но одна таки засела в голове накрепко. Когда
+главная героиня съезжала из общаги на квартиру - вещи она тащила на себе. И в
+одной руке у неё был чемодан со шмотками, а в другой - не меньших размеров
+вязанка книг и учебников.&lt;/p&gt;
+
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;http://snosov1.github.io/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;http://snosov1.github.io/static/moscow-does-not-believe.jpg&#34; /&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;http://snosov1.github.io/static/moscow-does-not-believe.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Задачи для начинающих</title>
