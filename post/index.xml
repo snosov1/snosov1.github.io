@@ -6,10 +6,37 @@
     <description>Recent content in Posts on Old-school old-time hacker&#39;s lair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Jan 1970 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Oct 2018 16:54:29 +0300</lastBuildDate>
     
 	<atom:link href="http://snosov1.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>&#34;OpenCV on Jetson&#34; Screencasts</title>
+      <link>http://snosov1.github.io/post/jetson-screencasts/</link>
+      <pubDate>Thu, 25 Oct 2018 16:54:29 +0300</pubDate>
+      
+      <guid>http://snosov1.github.io/post/jetson-screencasts/</guid>
+      <description>&lt;p&gt;A significant part of my life is connected with the &lt;a href=&#34;https://opencv.org/&#34; title=&#34;OpenCV&#34;&gt;OpenCV&lt;/a&gt; library. It has a
+fairly interesting history that, probably, deserves a thin printed brochure of
+its own: born in Intel, then &#34;abandoned&#34; to a third-party company to become
+world&#39;s largest Computer Vision library, then &#34;bought&#34; by Intel again with
+Itseez acquisition.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s hard to name the single reason which made the library a success, but
+all-in-all, it was a rock-solid software library that was at the edge of the
+technology. Both in terms of its main application - Computer Vision - and in
+terms of software development, in general (it was an early adopter of CMake,
+git, CUDA, vector intrinsics, etc.)&lt;/p&gt;
+
+&lt;p&gt;A skeptic, can, probably, say that if you count the number of tech businesses
+fueled by OpenCV, the library didn&#39;t provide stellar results. But the use of
+Computer Vision in the industry even today (not to mention 10-15 years ago) is
+still rather limited. And one thing that&#39;s hard to deny is the influence of
+OpenCV on the area as a whole.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Init</title>
