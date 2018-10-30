@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://snosov1.github.io/ru/post/breaking-bad/</loc>
+    <lastmod>2018-10-30T11:46:31+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://snosov1.github.io/ru/post/available-knowledge/</loc>
     <lastmod>2018-09-20T13:06:46+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -45,7 +52,7 @@
   
   <url>
     <loc>http://snosov1.github.io/ru/post/</loc>
-    <lastmod>2018-09-20T13:06:46+03:00</lastmod>
+    <lastmod>2018-10-30T11:46:31+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -58,7 +65,7 @@
   
   <url>
     <loc>http://snosov1.github.io/ru/</loc>
-    <lastmod>2018-09-20T13:06:46+03:00</lastmod>
+    <lastmod>2018-10-30T11:46:31+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
