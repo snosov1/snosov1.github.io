@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://snosov1.github.io/ru/post/not-fade-away/</loc>
+    <lastmod>2019-01-11T15:18:56+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://snosov1.github.io/ru/post/breaking-bad/</loc>
     <lastmod>2018-10-30T11:46:31+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -52,7 +59,7 @@
   
   <url>
     <loc>http://snosov1.github.io/ru/post/</loc>
-    <lastmod>2018-10-30T11:46:31+03:00</lastmod>
+    <lastmod>2019-01-11T15:18:56+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -65,7 +72,7 @@
   
   <url>
     <loc>http://snosov1.github.io/ru/</loc>
-    <lastmod>2018-10-30T11:46:31+03:00</lastmod>
+    <lastmod>2019-01-11T15:18:56+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
