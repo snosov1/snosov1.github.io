@@ -36,8 +36,6 @@ Computer Vision in the industry even today (not to mention 10-15 years ago) is
 still rather limited. And one thing that&#39;s hard to deny is the influence of
 OpenCV on the area as a whole.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
 &lt;p&gt;Anyway, at a certain point, I&#39;ve recorded a set of 15 screencasts that explains
 a lot of basic Computer Vision concepts and shows how to implement them using
 OpenCV. To date, only &lt;a href=&#34;https://www.youtube.com/watch?v=gvmP0WRVUxI&amp;amp;list=PL5B692fm6--ufBviUGK3hlwL1hVSyorZx&#34; title=&#34;9 of them were uploaded to YouTube&#34;&gt;9 of them were uploaded to YouTube&lt;/a&gt;, and I&#39;m afraid, the
@@ -55,7 +53,8 @@ serve a good starting point for someone who wants to learn about OpenCV and
 Computer Vision (and even a little bit about optimization for ARM
 processors). Of course, the videos provide more detailed explanations and
 supporting media, but I still think that the code is clean enough to be
-understood by a fellow coder. Hope you&#39;ll enjoy!&lt;/p&gt;</description>
+understood by a fellow coder. Hope you&#39;ll enjoy!&lt;/p&gt;
+</description>
       
     </item>
     
