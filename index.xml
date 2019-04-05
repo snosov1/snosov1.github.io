@@ -6,10 +6,171 @@
     <description>Recent content on Old-school old-time hacker&#39;s lair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Oct 2018 16:54:29 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 05 Apr 2019 13:55:01 +0300</lastBuildDate>
     
         <atom:link href="http://snosov1.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hidden in plain sight</title>
+      <link>http://snosov1.github.io/post/hindsight/</link>
+      <pubDate>Fri, 05 Apr 2019 13:55:01 +0300</pubDate>
+      
+      <guid>http://snosov1.github.io/post/hindsight/</guid>
+      
+        <description>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hindsight (noun) &amp;ndash; understanding of a situation or event only after it has happened or developed. Ex.: With hindsight, I should never have gone.&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;Google Translate&lt;/strong&gt;
+    
+      
+        
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;The biggest revelations people have are, typically, tied to realization of
+something that is obvious in hindsight. This revelations can be funny and
+joyful, sometimes in the most awkward way. They also can be heart-braking and
+devastating. But one way or another -- they are very deep on emotional and
+rational levels.&lt;/p&gt;
+
+&lt;p&gt;You won&#39;t have a hard time to think of such revelations in humankind
+history. Archimedes&#39; principle, shape of Earth, auto differentiation... wait,
+what? Auto... how, again? Like, switching from Hyundai to Lexus to differentiate
+from your losers-schoolmates?&lt;/p&gt;
+
+&lt;p&gt;Year 2012 marked the most important milestone in Machine Learning, so far --
+Alex Krizhevsky won an annual competition on image recognition by a large
+margin. As much as we&#39;re happy for Alex, obviously, the fact of his winning and
+the large margin is not the milestone itself. This year was the year when a
+critical mass of Machine Learning community realized a plain obvious (in
+hindsight) set of ideas:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Evaluating function derivatives with auto differentiation is MUCH better from&lt;/li&gt;
+  a practical standpoint than using numerical or symbolic differentiation.
+&lt;li&gt;To solve an ill-defined problem you need a lot of sample data to make it&lt;/li&gt;
+  better-defined.
+&lt;li&gt;It&#39;s more practical to perform a set of simple embarrassingly parallel&lt;/li&gt;
+  operations on a device designed specifically for that (i.e. GPU)
+&lt;/ul&gt;
+
+&lt;p&gt;Each of the 2 latter items deserves an article of its own, and I&#39;ll focus on the
+first item only.&lt;/p&gt;
+
+&lt;ul&gt;
+When I was studying computational methods in the university, they were only
+teaching 2 approaches to differentiation -- numerical and symbolic:
+&lt;li&gt;&lt;strong&gt;numerical&lt;/strong&gt; is when you evaluate the function in 2 &#34;close&#34; points and divide by&lt;/li&gt;
+  the distance between them, and
+&lt;li&gt;&lt;strong&gt;symbolic&lt;/strong&gt; is when you store the equation for your function and you apply&lt;/li&gt;
+  differentiation rules to get the explicit equation for the derivative.
+&lt;/ul&gt;
+
+&lt;p&gt;Essentially, this would be the first thing that come to mind if you ask a
+mathematician to think about the problem for 5 minutes. Obviously, both of these
+approaches have deeper developments, like, Runge-Kutta methods, that overcome
+certain shortcomings of practical applications. But on the fundamental level --
+these 2 approaches are all we studied at the university and never thought there
+was anything else to it.&lt;/p&gt;
+
+&lt;p&gt;Now here&#39;s a treat for you, algebra lovers. Imagine an abstract number with the
+property $\varepsilon^2 = 0$ (similar, to a more widely known $i^2 = -1$). We
+can build a number, like, $u + u&#39;\varepsilon = (u, u&#39;)$ and see how their
+arithmetic looks like (the images are taken from the &lt;a href=&#34;https://en.wikipedia.org/wiki/Automatic_differentiation&#34; title=&#34;Wikipedia article&#34;&gt;Wikipedia article&lt;/a&gt;):&lt;/p&gt;
+
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;http://snosov1.github.io/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;http://snosov1.github.io/static/autodiff.png&#34; /&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;http://snosov1.github.io/static/autodiff.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Looks familiar? The second (&#34;imaginary&#34;) term, actually, abides to the rules of
+differentiation! In other words, if instead of operating with real numbers we
+switch to operating with these dual numbers, we can evaluate the derivative of
+any function simultaneously with the function evaluation.&lt;/p&gt;
+
+&lt;p&gt;If your background is more in programming -- imagine that you&#39;ve implemented a
+class in C++ and overloaded the arithmetic operators to follow the just
+described rules. You pass the objects of this class to any template function and
+without any modifications, it gives you not only the value, but the derivative
+of the function as well. And since it&#39;s C++ -- it can use loops, =if=&#39;s and
+whatnot!&lt;/p&gt;
+
+&lt;p&gt;This and similar approaches to derivation are called, &lt;strong&gt;automatic
+differentiation&lt;/strong&gt;. It&#39;s a whole new approach that takes best of both worlds --
+it&#39;s as simple as the numerical differentiation (actually, even simpler once you
+realize it!) and it avoids a lot of its shortcomings, like, division by small
+values and evaluation of the original function at multiple points -- properties
+that were typically only attributed to symbolic methods (much more complex both
+to implement and execute).&lt;/p&gt;
+
+&lt;p&gt;This is, truly, the case of joyful and happy revelation, obvious in
+hindsight. It also answers one the questions that I&#39;ve had for a long time --
+why in math differentiation is easy and integration is hard, but in programming
+-- it&#39;s the other way around? Turned out the answer was -- we were doing
+differentiation the wrong way!&lt;/p&gt;
+
+&lt;p&gt;Now, you may still be wondering -- what does automatic differentiation has to do
+with Alex Krizhevsky and Machine Learning breakthrough of 2012? Well, if you
+think about it -- neural networks are really just complex functions built out of
+simple (i.e. easy to differentiate!) functions using simple arithmetic
+operations (i.e. EASY TO DIFFERENTIATE!). And back propagation is nothing else
+than an autodiff method to evaluate the derivative (i.e. gradient) of the loss
+function. (Let&#39;s leave all analogies with how the brain works and the &#34;neural&#34;
+linguistic around that on the conscience of people how build them.)&lt;/p&gt;
+
+&lt;p&gt;In other words, Alex Krizhevsky simply showed the community a practical way to
+apply all the tools together:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Build a big-enough dataset (best known method to formulate an ill-posed&lt;/li&gt;
+   problem, so far).
+&lt;li&gt;Build a &#34;solving function&#34; out of simple functions and simple operations.&lt;/li&gt;
+&lt;li&gt;Don&#39;t be afraid of the size of the dataset and function complexity since&lt;/li&gt;
+   you&#39;ll be working with them efficiently -- using auto differentiation on math
+   side and GPUs on the computational side.
+&lt;/ol&gt;
+
+&lt;p&gt;To conclude, here&#39;s the link to an article dated 2009 (!) with the title that
+has &lt;a href=&#34;https://justindomke.wordpress.com/2009/02/17/automatic-differentiation-the-most-criminally-underused-tool-in-the-potential-machine-learning-toolbox/&#34; title=&#34;&amp;quot;The most criminally underused tool in the potential machine learning
+toolbox&amp;quot;&#34;&gt;&#34;The most criminally underused tool in the potential machine learning
+toolbox&#34;&lt;/a&gt; as a substring. Can you guess what&#39;s this guy talking about?&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>&#34;OpenCV on Jetson&#34; Screencasts</title>

@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Old-school old-time hacker&#39;s lair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Oct 2018 16:54:29 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 05 Apr 2019 13:55:01 +0300</lastBuildDate>
     
 	<atom:link href="http://snosov1.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hidden in plain sight</title>
+      <link>http://snosov1.github.io/post/hindsight/</link>
+      <pubDate>Fri, 05 Apr 2019 13:55:01 +0300</pubDate>
+      
+      <guid>http://snosov1.github.io/post/hindsight/</guid>
+      <description>Hindsight (noun) &amp;ndash; understanding of a situation or event only after it has happened or developed. Ex.: With hindsight, I should never have gone.
+ Google Translate   The biggest revelations people have are, typically, tied to realization of something that is obvious in hindsight. This revelations can be funny and joyful, sometimes in the most awkward way. They also can be heart-braking and devastating. But one way or another -- they are very deep on emotional and rational levels.</description>
+    </item>
     
     <item>
       <title>&#34;OpenCV on Jetson&#34; Screencasts</title>
