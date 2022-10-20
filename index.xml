@@ -1,309 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Old-school old-time hacker&#39;s lair</title>
-    <link>http://snosov1.github.io/</link>
-    <description>Recent content on Old-school old-time hacker&#39;s lair</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 05 Apr 2019 13:55:01 +0300</lastBuildDate>
-    
-        <atom:link href="http://snosov1.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Hidden in plain sight</title>
-      <link>http://snosov1.github.io/post/hindsight/</link>
-      <pubDate>Fri, 05 Apr 2019 13:55:01 +0300</pubDate>
-      
-      <guid>http://snosov1.github.io/post/hindsight/</guid>
-      
-        <description>
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-
-  
-
-
-&lt;blockquote&gt;
-  &lt;p&gt;Hindsight (noun) &amp;ndash; understanding of a situation or event only after it has happened or developed. Ex.: With hindsight, I should never have gone.&lt;/p&gt;
-  &lt;footer&gt;
-    &lt;strong&gt;Google Translate&lt;/strong&gt;
-    
-      
-        
-      
-    
-  &lt;/footer&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;The biggest revelations people have are, typically, tied to realization of
-something that is obvious in hindsight. This revelations can be funny and
-joyful, sometimes in the most awkward way. They also can be heart-braking and
-devastating. But one way or another -- they are very deep on emotional and
-rational levels.&lt;/p&gt;
-
-&lt;p&gt;You won&#39;t have a hard time to think of such revelations in humankind
-history. Archimedes&#39; principle, shape of Earth, auto differentiation... wait,
-what? Auto... how, again? Like, switching from Hyundai to Lexus to differentiate
-from your losers-schoolmates?&lt;/p&gt;
-
-&lt;p&gt;Year 2012 marked the most important milestone in Machine Learning, so far --
-Alex Krizhevsky won an annual competition on image recognition by a large
-margin. As much as we&#39;re happy for Alex, obviously, the fact of his winning and
-the large margin is not the milestone itself. This year was the year when a
-critical mass of Machine Learning community realized a plain obvious (in
-hindsight) set of ideas:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Evaluating function derivatives with auto differentiation is MUCH better from&lt;/li&gt;
-  a practical standpoint than using numerical or symbolic differentiation.
-&lt;li&gt;To solve an ill-defined problem you need a lot of sample data to make it&lt;/li&gt;
-  better-defined.
-&lt;li&gt;It&#39;s more practical to perform a set of simple embarrassingly parallel&lt;/li&gt;
-  operations on a device designed specifically for that (i.e. GPU)
-&lt;/ul&gt;
-
-&lt;p&gt;Each of the 2 latter items deserves an article of its own, so I&#39;ll mainly focus
-on the first item.&lt;/p&gt;
-
-&lt;p&gt;When I was studying computational methods in the university, they were only
-teaching 2 approaches to differentiation -- numerical and symbolic:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;numerical&lt;/strong&gt; is when you evaluate the function in 2 &#34;close&#34; points and divide by&lt;/li&gt;
-  the distance between them, and
-&lt;li&gt;&lt;strong&gt;symbolic&lt;/strong&gt; is when you store the equation for your function and you apply&lt;/li&gt;
-  differentiation rules to get the explicit equation for the derivative.
-&lt;/ul&gt;
-
-&lt;p&gt;Essentially, this would be the first 2 options that come to mind if you ask a
-mathematician to think about the problem for 5 minutes. Obviously, both of these
-approaches have deeper developments, like, Runge-Kutta methods, that overcome
-certain shortcomings in practical applications. But they don&#39;t change them on
-fundamental level.&lt;/p&gt;
-
-&lt;p&gt;Now here&#39;s a treat for you, algebra lovers. Imagine an abstract number with the
-property &lt;code&gt;$ \varepsilon^2 &lt;/code&gt; 0 $= (similar, to a more widely known &lt;code&gt;$ i^2 &lt;/code&gt; -1
-$=). We can build a number, like, &lt;code&gt;$ u + u&#39;\varepsilon &lt;/code&gt; (u, u&#39;) $= and see how
-the arithmetic with such numbers looks like (the images are taken from the
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Automatic_differentiation&#34; title=&#34;Wikipedia article&#34;&gt;Wikipedia article&lt;/a&gt;):&lt;/p&gt;
-
-
-&lt;link rel=&#34;stylesheet&#34; href=&#34;http://snosov1.github.io/css/hugo-easy-gallery.css&#34; /&gt;
-&lt;div class=&#34;box&#34; &gt;
-  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-    &lt;div class=&#34;img&#34;&gt;
-      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;http://snosov1.github.io/static/autodiff.png&#34; /&gt;
-    &lt;/div&gt;
-    &lt;a href=&#34;http://snosov1.github.io/static/autodiff.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
-  &lt;/figure&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;Looks familiar? The second (&#34;imaginary&#34;) term, actually, abides to the rules of
-differentiation! In other words, if instead of operating with real numbers we
-switch to operating with these dual numbers, we can evaluate the derivative of
-any function simultaneously with the function evaluation.&lt;/p&gt;
-
-&lt;p&gt;If your background is more in programming -- imagine that you&#39;ve implemented a
-class in C++ and overloaded the arithmetic operators to follow the just
-described rules. You pass the objects of this class to any template function and
-without any modifications, it gives you not only the value, but the derivative
-of the function as well. And since it&#39;s C++ -- it can use loops, ifs and
-whatnot!&lt;/p&gt;
-
-&lt;p&gt;This and similar approaches are called, &lt;strong&gt;automatic differentiation&lt;/strong&gt;. It&#39;s a
-whole new approach that takes best of both worlds -- it&#39;s as simple as the
-numerical differentiation (actually, even simpler once you realize it!) and it
-avoids a lot of its shortcomings, like, division by small values and evaluation
-of the original function at multiple points -- something that was, typically,
-attributed to symbolic methods (much more complex both to implement and
-execute).&lt;/p&gt;
-
-&lt;p&gt;This is, truly, the case of joyful and happy revelation, obvious in
-hindsight. It also answers one the questions I&#39;ve had unanswered for a long time
--- why in math differentiation is easy and integration is hard, but in
-programming -- it&#39;s the other way around? Turned out the answer was -- we were
-doing differentiation the wrong way!&lt;/p&gt;
-
-&lt;p&gt;Now, you may still be wondering -- what does automatic differentiation has to do
-with Alex Krizhevsky and Machine Learning breakthrough of 2012? Well, if you
-think about it -- neural networks are really just complex functions built out of
-simple (i.e. easy to differentiate!) functions using simple arithmetic
-operations (i.e. EASY TO DIFFERENTIATE!). And back propagation is nothing else
-than an autodiff method to evaluate the derivative (i.e. gradient) of the loss
-function. (Let&#39;s leave all analogies with how the brain works and the &#34;neural&#34;
-linguistic around that on the conscience of people who build them.)&lt;/p&gt;
-
-&lt;p&gt;In other words, Alex Krizhevsky showed the community a practical way to apply
-all the tools together:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Build a big-enough dataset (best known method to formulate an ill-posed&lt;/li&gt;
-   problem, so far).
-&lt;li&gt;Build a &#34;solving function&#34; out of simple functions and simple operations.&lt;/li&gt;
-&lt;li&gt;Don&#39;t be afraid of the size of the dataset and function complexity since&lt;/li&gt;
-   you&#39;ll be working with them efficiently -- using auto differentiation on math
-   side and GPUs on the computational side.
-&lt;/ol&gt;
-
-&lt;p&gt;To conclude, here&#39;s the link to an article dated 2009 (!) with the title that
-has &lt;a href=&#34;https://justindomke.wordpress.com/2009/02/17/automatic-differentiation-the-most-criminally-underused-tool-in-the-potential-machine-learning-toolbox/&#34; title=&#34;&amp;quot;The most criminally underused tool in the potential machine learning
-toolbox&amp;quot;&#34;&gt;&#34;The most criminally underused tool in the potential machine learning
-toolbox&#34;&lt;/a&gt; as a substring. Can you guess what&#39;s this guy talking about?&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>&#34;OpenCV on Jetson&#34; Screencasts</title>
-      <link>http://snosov1.github.io/post/jetson-screencasts/</link>
-      <pubDate>Thu, 25 Oct 2018 16:54:29 +0300</pubDate>
-      
-      <guid>http://snosov1.github.io/post/jetson-screencasts/</guid>
-      
-        <description>&lt;p&gt;A significant part of my life is connected with the &lt;a href=&#34;https://opencv.org/&#34; title=&#34;OpenCV&#34;&gt;OpenCV&lt;/a&gt; library. It has a
-fairly interesting history that, probably, deserves a thin printed brochure of
-its own: born in Intel, then &#34;abandoned&#34; to a third-party company to become
-world&#39;s largest Computer Vision library, then &#34;bought&#34; by Intel again with
-Itseez acquisition.&lt;/p&gt;
-
-&lt;p&gt;It&#39;s hard to name the single reason which made the library a success, but
-all-in-all, it was a rock-solid software library that was at the edge of the
-technology. Both in terms of its main application -- Computer Vision -- and in
-terms of software development, in general (it was an early adopter of CMake,
-git, CUDA, vector intrinsics, etc.)&lt;/p&gt;
-
-&lt;p&gt;A skeptic, can, probably, say that if you count the number of tech businesses
-fueled by OpenCV, the library didn&#39;t provide stellar results. But the use of
-Computer Vision in the industry even today (not to mention 10-15 years ago) is
-still rather limited. And one thing that&#39;s hard to deny is the influence of
-OpenCV on the area as a whole.&lt;/p&gt;
-
-&lt;p&gt;Anyway, at a certain point, I&#39;ve recorded a set of 15 screencasts that explains
-a lot of basic Computer Vision concepts and shows how to implement them using
-OpenCV. To date, only &lt;a href=&#34;https://www.youtube.com/watch?v=gvmP0WRVUxI&amp;amp;list=PL5B692fm6--ufBviUGK3hlwL1hVSyorZx&#34; title=&#34;9 of them were uploaded to YouTube&#34;&gt;9 of them were uploaded to YouTube&lt;/a&gt;, and I&#39;m afraid, the
-remaining (most interesting!) videos will never see the light of day.&lt;/p&gt;
-&lt;!-- https://www.youtube.com/watch?v=gvmP0WRVUxI --&gt;
-
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/gvmP0WRVUxI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;However, the &lt;a href=&#34;https://github.com/snosov1/jetson-screencasts-sources&#34; title=&#34;code accompanying the screencasts&#34;&gt;code accompanying the screencasts&lt;/a&gt; is available in full and can
-serve a good starting point for someone who wants to learn about OpenCV and
-Computer Vision (and even a little bit about optimization for ARM
-processors). Of course, the videos provide more detailed explanations and
-supporting media, but I still think that the code is clean enough to be
-understood by a fellow coder. Hope you&#39;ll enjoy!&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://snosov1.github.io/about/</link>
-      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
-      
-      <guid>http://snosov1.github.io/about/</guid>
-      
-        <description>&lt;p&gt;My name is Sergei Nosov. I&#39;m an old-school old-time hacker from Russia. I&#39;ve
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Old-school old-time hacker's lair</title><link>http://snosov1.github.io/</link><description>Recent content on Old-school old-time hacker's lair</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 05 Apr 2019 13:55:01 +0300</lastBuildDate><atom:link href="http://snosov1.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>http://snosov1.github.io/about/</link><pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate><guid>http://snosov1.github.io/about/</guid><description>&lt;p>
+My name is Sergei Nosov. I&amp;#39;m an old-school old-time hacker from Russia. I&amp;#39;ve
 been programming and doing math/computer science for as long as I can remember.
 I have an extensive experience in native programming languages (mainly, C++); HW
 optimization for Intel CPUs and Nvidia GPUs; Computer Vision and Computer
-Science.&lt;/p&gt;
-
-&lt;p&gt;I&#39;m a heavy &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34; title=&#34;Emacs&#34;&gt;Emacs&lt;/a&gt; user with an extensible, customizable, self-documented
-&lt;a href=&#34;https://github.com/snosov1/dot-emacs&#34; title=&#34;configuration file&#34;&gt;configuration file&lt;/a&gt; that also has a &lt;a href=&#34;https://github.com/snosov1/dot-emacs/blob/master/tutorial&#34; title=&#34;tutorial&#34;&gt;tutorial&lt;/a&gt; for beginners (in Russian). Also,
-I&#39;m the author and maintainer of a popular Emacs package &lt;a href=&#34;https://melpa.org/#/toc-org&#34; title=&#34;toc-org&#34;&gt;toc-org&lt;/a&gt; for automatic
-table of contents generation (and not so popular &lt;a href=&#34;https://melpa.org/#/dummyparens&#34; title=&#34;dummyparens&#34;&gt;dummyparens&lt;/a&gt; package)&lt;/p&gt;
-
-&lt;p&gt;The list of public projects I&#39;ve been contributing to over the years looks
-something like this:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://software.intel.com/en-us/openvino-toolkit&#34; title=&#34;OpenVINO&#34;&gt;OpenVINO&lt;/a&gt; &lt;a href=&#34;https://github.com/opencv/open_model_zoo&#34; title=&#34;Model Zoo&#34;&gt;Model Zoo&lt;/a&gt;. Our team has trained about one third of the &#34;intel_models&#34;&lt;/li&gt;
-&lt;li&gt;OpenCV on Jetson &lt;a href=&#34;https://github.com/snosov1/jetson-screencasts-sources&#34; title=&#34;screencasts&#34;&gt;screencasts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;OpenCV &lt;a href=&#34;https://github.com/opencv/opencv/blob/master/modules/imgproc/src/clahe.cpp&#34; title=&#34;CLAHE implementation&#34;&gt;CLAHE implementation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Intel-Media-SDK/MediaSDK/tree/master/samples&#34; title=&#34;Media SDK samples&#34;&gt;Media SDK samples&lt;/a&gt; (in pre-open source era of Media SDK)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/digitalsphere/sphericalmirror/src/master/&#34; title=&#34;VLC plugin&#34;&gt;VLC plugin&lt;/a&gt; for Spherical Mirror projection&lt;/li&gt;
-&lt;li&gt;My &lt;a href=&#34;https://www.dropbox.com/s/yq7p4de99knn1o0/pre-defense.pdf?dl=0&#34; title=&#34;Master&#39;s Thesis&#34;&gt;Master&#39;s Thesis&lt;/a&gt; (in Russian) &#34;On the maximal volume of parallelotope inscribed in d-simplex&#34; at Nizhniy Novgorod State University.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Since 2015, I read regular Saturday classes on competitive programming at
-Nizhniy Novgorod school 165. Also, I have an annual lecture on &lt;a href=&#34;https://github.com/UNN-VMK-Software/devtools-course-theory/tree/master/slides/09-automation&#34; title=&#34;&amp;quot;Automation in
-Software Engineering&amp;quot;&#34;&gt;&#34;Automation in
-Software Engineering&#34;&lt;/a&gt; (in Russian) at Nizhniy Novgorod State University (part of
-the &#34;Software Development Tools&#34; course)&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Init</title>
-      <link>http://snosov1.github.io/post/init/</link>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
-      
-      <guid>http://snosov1.github.io/post/init/</guid>
-      
-        <description>
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-
-  
-
-
-&lt;blockquote&gt;
-  &lt;p&gt;Once there was only dark. If you ask me, the light is winning.&lt;/p&gt;
-  &lt;footer&gt;
-    &lt;strong&gt;Rust, True Detective&lt;/strong&gt;
-    
-      
-        
-      
-    
-  &lt;/footer&gt;
-&lt;/blockquote&gt;
-
-</description>
-      
-    </item>
-    
-  </channel>
-</rss>
+Science.&lt;/p>
+&lt;p>
+I&amp;#39;m a heavy &lt;a href="https://www.gnu.org/software/emacs/">Emacs&lt;/a> user with an extensible, customizable, self-documented
+&lt;a href="https://github.com/snosov1/dot-emacs">configuration file&lt;/a> that also has a &lt;a href="https://github.com/snosov1/dot-emacs/blob/master/tutorial.org">tutorial&lt;/a> for beginners (in Russian). Also,
+I&amp;#39;m the author and maintainer of a popular Emacs package &lt;a href="https://melpa.org/#/toc-org">toc-org&lt;/a> for automatic
+table of contents generation (and not so popular &lt;a href="https://melpa.org/#/dummyparens">dummyparens&lt;/a> package)&lt;/p>
+&lt;p>
+The list of public projects I&amp;#39;ve been contributing to over the years looks
+something like this:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://software.intel.com/en-us/openvino-toolkit">OpenVINO&lt;/a> &lt;a href="https://github.com/opencv/open_model_zoo">Model Zoo&lt;/a>. Our team has trained about one third of the &amp;#34;intel_models&amp;#34;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>OpenCV on Jetson &lt;a href="https://github.com/snosov1/jetson-screencasts-sources">screencasts&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>OpenCV &lt;a href="https://github.com/opencv/opencv/blob/master/modules/imgproc/src/clahe.cpp">CLAHE implementation&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/Intel-Media-SDK/MediaSDK/tree/master/samples">Media SDK samples&lt;/a> (in pre-open source era of Media SDK)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://bitbucket.org/digitalsphere/sphericalmirror/src/master/">VLC plugin&lt;/a> for Spherical Mirror projection&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>My &lt;a href="https://www.dropbox.com/s/yq7p4de99knn1o0/pre-defense.pdf?dl=0">Master&amp;#39;s Thesis&lt;/a> (in Russian) &amp;#34;On the maximal volume of parallelotope inscribed in d-simplex&amp;#34; at Nizhniy Novgorod State University.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Since 2015, I read regular Saturday classes on competitive programming at
+Nizhniy Novgorod school 165. Also, I have an annual lecture on &lt;a href="https://github.com/UNN-VMK-Software/devtools-course-theory/tree/master/slides/09-automation">&amp;#34;Automation in
+Software Engineering&amp;#34;&lt;/a> (in Russian) at Nizhniy Novgorod State University (part of
+the &amp;#34;Software Development Tools&amp;#34; course)&lt;/p></description></item><item><title>Posts</title><link>http://snosov1.github.io/post/</link><pubDate>Fri, 05 Apr 2019 13:55:01 +0300</pubDate><guid>http://snosov1.github.io/post/</guid><description/></item></channel></rss>

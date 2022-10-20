@@ -1,45 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Old-school old-time hacker&#39;s lair</title>
-    <link>http://snosov1.github.io/post/</link>
-    <description>Recent content in Posts on Old-school old-time hacker&#39;s lair</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 05 Apr 2019 13:55:01 +0300</lastBuildDate>
-    
-	<atom:link href="http://snosov1.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Hidden in plain sight</title>
-      <link>http://snosov1.github.io/post/hindsight/</link>
-      <pubDate>Fri, 05 Apr 2019 13:55:01 +0300</pubDate>
-      
-      <guid>http://snosov1.github.io/post/hindsight/</guid>
-      <description>Hindsight (noun) &amp;ndash; understanding of a situation or event only after it has happened or developed. Ex.: With hindsight, I should never have gone.
- Google Translate   The biggest revelations people have are, typically, tied to realization of something that is obvious in hindsight. This revelations can be funny and joyful, sometimes in the most awkward way. They also can be heart-braking and devastating. But one way or another -- they are very deep on emotional and rational levels.</description>
-    </item>
-    
-    <item>
-      <title>&#34;OpenCV on Jetson&#34; Screencasts</title>
-      <link>http://snosov1.github.io/post/jetson-screencasts/</link>
-      <pubDate>Thu, 25 Oct 2018 16:54:29 +0300</pubDate>
-      
-      <guid>http://snosov1.github.io/post/jetson-screencasts/</guid>
-      <description>A significant part of my life is connected with the OpenCV library. It has a fairly interesting history that, probably, deserves a thin printed brochure of its own: born in Intel, then &#34;abandoned&#34; to a third-party company to become world&#39;s largest Computer Vision library, then &#34;bought&#34; by Intel again with Itseez acquisition.
-It&#39;s hard to name the single reason which made the library a success, but all-in-all, it was a rock-solid software library that was at the edge of the technology.</description>
-    </item>
-    
-    <item>
-      <title>Init</title>
-      <link>http://snosov1.github.io/post/init/</link>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
-      
-      <guid>http://snosov1.github.io/post/init/</guid>
-      <description>  Once there was only dark. If you ask me, the light is winning.
- Rust, True Detective   </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Old-school old-time hacker's lair</title><link>http://snosov1.github.io/post/</link><description>Recent content in Posts on Old-school old-time hacker's lair</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 05 Apr 2019 13:55:01 +0300</lastBuildDate><atom:link href="http://snosov1.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Hidden in plain sight</title><link>http://snosov1.github.io/post/hindsight/</link><pubDate>Fri, 05 Apr 2019 13:55:01 +0300</pubDate><guid>http://snosov1.github.io/post/hindsight/</guid><description>Hindsight (noun) &amp;ndash; understanding of a situation or event only after it has happened or developed. Ex.: With hindsight, I should never have gone.
+Google Translate The biggest revelations people have are, typically, tied to realization of something that is obvious in hindsight. This revelations can be funny and joyful, sometimes in the most awkward way. They also can be heart-braking and devastating. But one way or another – they are very deep on emotional and rational levels.</description></item><item><title>"OpenCV on Jetson" Screencasts</title><link>http://snosov1.github.io/post/jetson-screencasts/</link><pubDate>Thu, 25 Oct 2018 16:54:29 +0300</pubDate><guid>http://snosov1.github.io/post/jetson-screencasts/</guid><description>A significant part of my life is connected with the OpenCV library. It has a fairly interesting history that, probably, deserves a thin printed brochure of its own: born in Intel, then &amp;#34;abandoned&amp;#34; to a third-party company to become world&amp;#39;s largest Computer Vision library, then &amp;#34;bought&amp;#34; by Intel again with Itseez acquisition.
+It&amp;#39;s hard to name the single reason which made the library a success, but all-in-all, it was a rock-solid software library that was at the edge of the technology.</description></item><item><title>Init</title><link>http://snosov1.github.io/post/init/</link><pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate><guid>http://snosov1.github.io/post/init/</guid><description> Once there was only dark. If you ask me, the light is winning.
+Rust, True Detective</description></item></channel></rss>
